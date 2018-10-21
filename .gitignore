@@ -20,6 +20,3 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
-
-favicon.ico
-index.html
