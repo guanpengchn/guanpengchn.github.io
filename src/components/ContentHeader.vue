@@ -1,6 +1,6 @@
 <template>
   <div class="article-meta">
-    <h1>{{ article.title }}</h1>
+    <h2>{{ article.title }}</h2>
     <v-icon small class="pa pl">access_alarm</v-icon>
     <span>{{ article.createdAt }}</span>
     <v-icon small class="pa">comment</v-icon>
@@ -34,7 +34,7 @@ export default {
   padding: 45px 0 0 0;
   text-align: center;
 }
-.article-meta h1{
+.article-meta h2{
   padding-bottom:20px;
 }
 .article-meta span{
