@@ -72,15 +72,14 @@
 .markdown-body p,
 .markdown-body ul,
 .markdown-body ol {
-  margin: 1em 0 1.5em;
+  margin: 16px 0 16px;
   font-size: 15px;
+  letter-spacing: 0.5px;
 }
 
 .markdown-body img,
 .markdown-body .pre-code {
   margin: 1.5em auto 3em;
-  border-radius: 6px;
-  box-shadow: 0 15px 30px -15px rgba(0, 0, 0, 0.9);
 }
 
 .markdown-body img {
@@ -195,6 +194,7 @@
   color: rgba(21, 101, 192, 0.8);
   font-size: 95%;
   margin: 0 0.2em;
+  box-shadow: none;
 }
 
 .markdown-body .pre-code {
@@ -278,7 +278,7 @@
   .markdown-body p,
   .markdown-body ul,
   .markdown-body ol {
-    margin: 1em 0 1.5em;
+    margin: 16px 0 16px;
     font-size: 15px;
   }
 }
