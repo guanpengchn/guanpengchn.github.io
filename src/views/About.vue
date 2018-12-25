@@ -5,7 +5,7 @@
       >
         <v-layout row align-center justify-center>
           <v-card class="card">
-            <h3 class="stress">Aaron</h3>
+            <h3 class="stress">基本信息</h3>
             <hr/>
             <div class="Grid">
               <p class="Grid-cell u-1ofn">Wechat</p>
@@ -20,7 +20,7 @@
             <hr/>
             <div class="Grid">
               <p class="Grid-cell u-1ofn">2016.09 - 2019.07</p>
-              <p class="Grid-cell u-1ofn">区块链技术</p>
+              <p class="Grid-cell u-1ofn">系统开发、区块链技术</p>
               <p class="Grid-cell u-1ofn">硕士</p>
               <p class="Grid-cell">中科院计算技术研究所</p>
             </div>
@@ -34,11 +34,11 @@
             <hr/>
             <div class="Grid">
               <p class="Grid-cell u-1ofn"><a href="https://blog.csdn.net/grape875499765" target="_blank">CSDN</a></p>
-              <p class="Grid-cell">阅读量 15W 左右的 CSDN 博客，早期笔记放于此处</p>
+              <p class="Grid-cell">阅读量 20W 左右的 CSDN 博客，早期笔记放于此处</p>
             </div>
             <div class="Grid">
               <p class="Grid-cell u-1ofn"><a href="https://guanpengchn.github.io/" target="_blank">Aaron's Blog</a></p>
-              <p class="Grid-cell">部署于 GitHub Pages，通过issues发布博客，包含精选文章、笔记、slides、算法题和电子书列表</p>
+              <p class="Grid-cell">部署于 GitHub Pages，通过issues发布博客，包含精选文章、笔记、slides和算法题</p>
             </div>
             <div class="Grid">
               <p class="Grid-cell u-1ofn"><a href="https://github.com/guanpengchn" target="_blank">GitHub</a></p>
@@ -47,18 +47,14 @@
                 <a href="https://github.com/guanpengchn/guanpengchn.github.io/tree/dev" target="_blank">源码</a>
                 ，个人 slides 库 
                 <a href="https://github.com/guanpengchn/presentation" target="_blank">presentation</a>
-                ，团队协作系统
-                <a href="https://github.com/guanpengchn/plate" target="_blank">plate</a>
                 ，高清目录电子书
                 <a href="https://github.com/guanpengchn/aaron.books" target="_blank">aaron.books</a>
-                ，书籍笔记
-                <a href="https://github.com/guanpengchn/aaron.note" target="_blank">aaron.note</a>
                 等
               </p>
             </div>
             <h3 class="stress">专业技能</h3>
             <hr/>
-            <p>• 熟练使用 Java / JavaScript，阅读高并发程序设计、架构设计和代码整洁之道等书籍</p>
+            <p>• 熟练使用 Java / JavaScript，熟悉语言特性，有较多项目经验</p>
             <p>• 熟练使用 Git，熟悉团队协作流程，有开源社区交流、Linux 运维和部署经验</p>
             <p>• 熟悉计算机网络，算法与数据结构等基础，英语四六级和日语 N2 通过</p>
           </v-card>

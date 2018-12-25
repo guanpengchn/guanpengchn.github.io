@@ -36,10 +36,6 @@ export const nav = [
     path: '/presentation'
   },
   {
-    text: 'Book',
-    path: '/book'
-  },
-  {
     text: 'About Me',
     path: '/about'
   },
@@ -89,6 +85,11 @@ export const friend = {
       name: 'zhangyachen',
       url: 'https://zhangyachen.github.io/',
       avatar: 'https://avatars1.githubusercontent.com/u/14103319?s=100&v=4'
+    },
+    {
+      name: 'Chen Weihang',
+      url: 'sunny_cwh@163.com',
+      avatar: 'https://avatars1.githubusercontent.com/u/22561442?s=100&v=4'
     },
     {
       name: 'zhning12',

@@ -15,6 +15,11 @@ export default {
   name: 'blog-article-meta',
   props: {
     article: { type: Object, required: true },
+  },
+  watch: {
+    article: function() {
+      document.title = this.article.title
+    }
   }
 }
 </script>
