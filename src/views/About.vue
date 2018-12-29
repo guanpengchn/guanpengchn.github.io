@@ -47,8 +47,8 @@
                 <a href="https://github.com/guanpengchn/guanpengchn.github.io/tree/dev" target="_blank">源码</a>
                 ，个人 slides 库 
                 <a href="https://github.com/guanpengchn/presentation" target="_blank">presentation</a>
-                ，高清目录电子书
-                <a href="https://github.com/guanpengchn/aaron.books" target="_blank">aaron.books</a>
+                ，高清电子书
+                <a href="https://github.com/guanpengchn/awesome-books" target="_blank">awesome-books</a>
                 等
               </p>
             </div>
