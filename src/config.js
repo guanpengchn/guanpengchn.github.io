@@ -1,46 +1,34 @@
-// import BlogArticles from './components/BlogArticles'
-// import WorklogArticles from './components/WorklogArticles'
-// import StudyArticles from './components/StudyArticles'
-// import { convertBlogArticle, convertWorklogArticle, convertStudyArticle } from './helper'
-
 export const clientId= '3bffa5a5593d3f112758'
 export const clientSecret= '1147929f2267cfcb5abb1e27e91a98a47316c557'
-
 export const owner = 'guanpengchn'
-
-export const keepAliveComps = [
-  // BlogArticles.name,
-  // WorklogArticles.name,
-  // StudyArticles.name,
-]
 
 export const nav = [
   { 
-    text: 'Article',
+    text: '文章列表',
     path: '/article'
   },
   { 
-    text: 'Study',
+    text: '学习笔记',
     path: '/study'
   },
   {
-    text: 'Algorithm',
+    text: '算法练习',
     path: '/algorithm'
   },
   {
-    text: 'Note',
+    text: '收藏列表',
     path: '/note'
   },
   { 
-    text: 'Presentation',
+    text: '演示列表',
     path: '/presentation'
   },
   {
-    text: 'About Me',
+    text: '关于我',
     path: '/about'
   },
   {
-    text: 'Friend',
+    text: '友情链接',
     path: '/friend'
   }
 ]

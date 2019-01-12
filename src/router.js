@@ -15,7 +15,6 @@ export default new Router({
     },
     {
       path: '/about',
-      name: 'about',
       component: Layout,
       children: [{
         path: '',
@@ -28,7 +27,6 @@ export default new Router({
     },
     {
       path: '/article',
-      name: 'article',
       component: Layout,
       children: [{
         path: '',
@@ -45,7 +43,6 @@ export default new Router({
     },
     {
       path: '/study',
-      name: 'study',
       component: Layout,
       children: [{
         path: '',
@@ -62,7 +59,6 @@ export default new Router({
     },
     {
       path: '/algorithm',
-      name: 'algorithm',
       component: Layout,
       children: [{
         path: '',
@@ -79,7 +75,6 @@ export default new Router({
     },
     {
       path: '/presentation',
-      name: 'presentation',
       component: Layout,
       children: [{
         path: '',
@@ -92,7 +87,6 @@ export default new Router({
     },
     {
       path: '/note',
-      name: 'note',
       component: Layout,
       children: [{
         path: '',
@@ -109,7 +103,6 @@ export default new Router({
     },
     {
       path: '/friend',
-      name: 'friend',
       component: Layout,
       children: [{
         path: '',

@@ -28,10 +28,10 @@
 
 <script>
 // import LoadMore from './LoadMore'
-import { getRepoIssuesComments } from "@/api";
+import { getRepoIssuesComments } from "@/api"
 import { convertComment } from '@/utils/helper'
 
-const paging = { page: 1, size: 30 };
+const paging = { page: 1, size: 30 }
 export default {
   name: "article-comment",
   //   components: { LoadMore },
@@ -42,14 +42,14 @@ export default {
       hasMoreComment: false,
       repoName: 'guanpengchn.github.io',
       url: 'https://github.com/guanpengchn/guanpengchn.github.io/issues/'
-    };
+    }
   },
   props:{
     isProgress: { type: Boolean, required: true }
   },
   created() {
     this.url += this.$route.params.id
-    this.handleLoadComments();
+    this.handleLoadComments()
   },
   methods: {
     /* eslint-disable */
@@ -61,13 +61,13 @@ export default {
         paging.page,
         paging.size
       ).then(items => {
-        if (!items.length) return;
-        this.comments = [...items.map(convertComment)];
+        if (!items.length) return
+        this.comments = [...items.map(convertComment)]
         // this.isLoading = false
-      });
+      })
     }
   }
-};
+}
 </script>
 
 <style scoped>

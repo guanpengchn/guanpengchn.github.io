@@ -13,7 +13,7 @@ export default {
   props: {
     visible: { type: Boolean, required: true }
   }
-};
+}
 </script>
 <style scoped>
 </style>

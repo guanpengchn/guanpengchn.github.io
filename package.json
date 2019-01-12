@@ -6,14 +6,10 @@
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "gulp"
+    "deploy": "npm run build && ./deploy.sh"
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-shell": "^0.6.5",
     "highlight.js": "^9.12.0",
     "marked": "^0.4.0",
     "vue": "^2.5.16",
@@ -27,6 +23,7 @@
     "@vue/cli-plugin-eslint": "^3.0.0-rc.10",
     "@vue/cli-service": "^3.0.0-rc.10",
     "babel-plugin-transform-imports": "^1.4.1",
+    "material-design-icons-iconfont": "^4.0.3",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "vue-cli-plugin-vuetify": "^0.1.6",
@@ -41,7 +38,9 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": 2
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }

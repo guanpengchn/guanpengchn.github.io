@@ -1,23 +1,23 @@
 <template>
-    <div id="article">
-      <content-header :article="article" :class="{active:isProgress}"></content-header>
-      <div id="markdown" v-html="article.body" class="markdown-body" v-marked></div>
-      <comment :isProgress="isProgress"></comment>
-      <v-layout justify-center>
-          <template v-if="isProgress">
-            <v-progress-circular
-              indeterminate
-              color="indigo darken-2"
-            ></v-progress-circular>
-          </template>
-      </v-layout>
-    </div>
+  <div id="article">
+    <content-header :article="article" :class="{active:isProgress}"></content-header>
+    <!-- <toc></toc> -->
+    <!-- <button @click="jump()">dfaf</button> -->
+    <div class="markdown-body" id="markdown" v-html="article.body" v-marked></div>
+    <comment :isProgress="isProgress"></comment>
+    <v-layout justify-center>
+      <template v-if="isProgress">
+        <v-progress-circular color="indigo darken-2" indeterminate></v-progress-circular>
+      </template>
+    </v-layout>
+  </div>
 </template>
 <script>
-import { getRepoIssue } from '@/api';
+import { getRepoIssue } from '@/api'
 import { convertContent } from '@/utils/helper'
 import Comment from '@/components/Comment'
 import ContentHeader from '@/components/ContentHeader'
+// import Toc from '@/components/Toc'
 
 export default {
   components: {
@@ -26,38 +26,53 @@ export default {
   },
   data() {
     return {
-      article:{},
-      comment:{},
+      article: {},
+      comment: {},
       isProgress: false,
       repoName: 'guanpengchn.github.io'
     }
   },
-  created(){
+  created() {
     this.getArticles()
   },
-  mounted(){
-    document.getElementById('layout').style.backgroundColor='white'
-  },
-  beforeDestroy(){
-    document.getElementById('layout').style.backgroundColor='#f5f5f5'
-  },
+  // mounted(){
+  //   document.getElementById('app').style.backgroundColor='white'
+  // },
+  // beforeDestroy(){
+  //   document.getElementById('app').style.backgroundColor='#f5f5f5'
+  // },
   methods: {
-    getArticles: function(){
+    jump: function() {
+      let jump = document.getElementById('DO（Domain Object）领域对象')
+      // 获取需要滚动的距离
+      let total = jump.offsetTop
+      // Chrome
+      document.body.scrollTop = total
+      // Firefox
+      document.documentElement.scrollTop = total
+      // Safari
+      window.pageYOffset = total
+    },
+    getArticles: function() {
       this.isProgress = true
-      getRepoIssue(this.repoName,this.$route.params.id)
-        .then(article => {
-          this.article = convertContent(article) 
-          this.isProgress = false
-        })
+      getRepoIssue(this.repoName, this.$route.params.id).then(article => {
+        this.article = convertContent(article)
+        this.isProgress = false
+      })
     }
   }
-};
+}
 </script>
 <style src="../styles/base.css"></style>
 <style src="../styles/atom-one-dark.css"></style>
 <style src="../styles/markdown.css"></style>
 <style scoped>
-.active{
+#article {
+  max-width: 1185px;
+  margin: auto;
+  width: 100%;
+}
+.active {
   display: none;
 }
 </style>

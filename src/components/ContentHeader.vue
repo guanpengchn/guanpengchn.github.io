@@ -27,9 +27,7 @@ export default {
 <style scoped>
 .article-meta  {
   font-size: 14px;
-  background-color: #fff;
   min-width: 200px;
-  max-width: 980px;
   margin: 0 auto;
   padding: 45px 0 0 0;
   text-align: center;

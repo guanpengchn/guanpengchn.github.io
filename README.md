@@ -11,29 +11,29 @@
 - 安装包
 
 ```
-npm install
+yarn install
 ```
 
 - 启动
 
 ```
-npm run serve
+yarn serve
 ```
 
 - 构建
  
 ```
-npm run build
+yarn build
 ```
 
 - 检查
 
 ```
-npm run lint
+yarn lint
 ```
 
 - 部署到github上
 
 ```
-npm run deploy
+yarn deploy
 ```
